@@ -3,7 +3,7 @@ import type { ResumeConfig } from './types'
 export const resumeConfig: ResumeConfig = {
   personal: {
     name: 'Thomas Prud\'homme',
-    photoBackEmoji: '👨💻', // Vous pourrez changer l'emoji ou mettre votre photo dans public/images/
+    photoBackEmoji: '👨💻',
     title: {
       fr: 'Apprenti CFC Informaticien',
       en: 'IT Apprentice (CFC)',
@@ -38,15 +38,11 @@ export const resumeConfig: ResumeConfig = {
     { type: 'phone', label: '076 376 45 51' },
     { type: 'linkedin', label: 'Thomas Prud\'homme', href: 'https://www.linkedin.com/in/thomas-tp' },
     { type: 'location', label: 'Gland, Vaud' },
-    // Liens Certifications demandés
     { type: 'website', label: 'Profil Credly', href: 'https://www.credly.com/users/thomas-prudhomme' },
     { type: 'website', label: 'Certificat GRI (PDF)', href: 'https://drive.google.com/file/d/1Hsa2Tj_3KnwXE_PeoVTB7LFF6ITYrgRj/view' },
   ],
 
-  items: [
-    // Cette section "items" n'est pas standard mais le "skills" ci-dessous l'est.
-    // NOTE: Je garde la structure stricte "skills" demandée.
-  ],
+  items: [],
 
   skills: [
     {
@@ -130,6 +126,14 @@ export const resumeConfig: ResumeConfig = {
       techs: ['Windows', 'Hardware'],
       isHighlighted: true,
       details: {
+        context: {
+          fr: 'Service informatique interne LRG',
+          en: 'LRG Internal IT Department',
+        },
+        env: {
+          fr: 'Windows / Hardware',
+          en: 'Windows / Hardware',
+        },
         tasks: {
           fr: [
             'Installation de PC',
@@ -149,8 +153,8 @@ export const resumeConfig: ResumeConfig = {
       type: { fr: 'Stage', en: 'Internship' },
       period: { fr: 'Février 2024 (3 jours)', en: 'February 2024 (3 days)' },
       description: {
-        fr: 'Découverte de l\'EPFL et des activités IT.',
-        en: 'Discovery of EPFL campus and IT activities.',
+        fr: 'Découverte de l\'EPFL et des activités IT. Stage d\'observation.',
+        en: 'Discovery of EPFL campus and IT activities. Observation internship.',
       },
       techs: ['IT Support', 'Education'],
     },
@@ -161,7 +165,6 @@ export const resumeConfig: ResumeConfig = {
       school: { fr: 'Geneva Institute of Technology', en: 'Geneva Institute of Technology' },
       degree: { fr: 'CFC Informaticien (Exploitation/Infra)', en: 'CFC IT Specialist (Infrastructure)' },
       period: '2024 - 2028',
-      description: { fr: 'Formation duale en cours', en: 'Dual education ongoing' },
     },
     {
       school: { fr: 'FuturPlus, Lausanne', en: 'FuturPlus, Lausanne' },
