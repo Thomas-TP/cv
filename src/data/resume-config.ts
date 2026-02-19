@@ -42,8 +42,6 @@ export const resumeConfig: ResumeConfig = {
     { type: 'website', label: 'Certificat GRI (PDF)', href: 'https://drive.google.com/file/d/1Hsa2Tj_3KnwXE_PeoVTB7LFF6ITYrgRj/view' },
   ],
 
-  items: [],
-
   skills: [
     {
       title: { fr: 'Langues', en: 'Languages' },
