@@ -3,43 +3,36 @@ import type { ResumeConfig } from './types'
 export const resumeConfig: ResumeConfig = {
   personal: {
     name: 'Thomas Prud\'homme',
-    photoBackEmoji: '👨💻',
+    photoBackEmoji: '👨‍💻',
     title: {
-      fr: 'Apprenti CFC Informaticien',
-      en: 'IT Apprentice (CFC)',
+      fr: 'Apprenti CFC Informaticien Exploitation & Infrastructure',
+      en: 'IT Operations & Infrastructure Apprentice',
     },
     subtitle: {
-      fr: 'Recherche alternance dès Juillet 2026 (Arc lémanique)',
-      en: 'Looking for apprenticeship starting July 2026 (Lake Geneva area)',
+      fr: 'Recherche d\'une alternance à partir de juillet 2026 (Arc lémanique)',
+      en: 'Seeking a work-study program from July 2026 (Lake Geneva region)',
     },
     location: 'Gland, Vaud, Suisse',
   },
 
   seo: {
-    title: 'Thomas Prud\'homme — IT Apprentice',
-    description: 'CV interactif de Thomas Prud\'homme, apprenti informaticien (Exploitation et Infrastructure) en Suisse.',
+    title: 'Thomas Prud\'homme — Apprenti CFC Informaticien',
+    description: 'CV interactif de Thomas Prud\'homme, apprenti CFC Informaticien spécialisé en Linux, Web, Cloud et IoT.',
   },
 
   languages: {
     default: 'fr',
     available: ['fr', 'en'],
-    labels: {
-      fr: 'FR',
-      en: 'EN',
-    },
-  },
-
-  theme: {
-    preset: 'ocean',
+    labels: { fr: 'FR', en: 'EN' },
   },
 
   contact: [
     { type: 'email', label: 'T+CV@prudhomme.li' },
     { type: 'phone', label: '076 376 45 51' },
     { type: 'linkedin', label: 'Thomas Prud\'homme', href: 'https://www.linkedin.com/in/thomas-tp' },
-    { type: 'location', label: 'Gland, Vaud' },
-    { type: 'website', label: 'Profil Credly', href: 'https://www.credly.com/users/thomas-prudhomme' },
-    { type: 'website', label: 'Certificat GRI (PDF)', href: 'https://drive.google.com/file/d/1Hsa2Tj_3KnwXE_PeoVTB7LFF6ITYrgRj/view' },
+    { type: 'website', label: 'Mes Liens (thomastp.me)', href: 'https://thomastp.me/link' },
+    { type: 'website', label: 'Badges Credly', href: 'https://www.credly.com/users/thomas-prudhomme' },
+    { type: 'location', label: 'Gland, Vaud, Suisse' },
   ],
 
   skills: [
@@ -47,18 +40,18 @@ export const resumeConfig: ResumeConfig = {
       title: { fr: 'Langues', en: 'Languages' },
       type: 'languages',
       items: [
-        { name: { fr: 'Français', en: 'French' }, level: { fr: 'Maternel', en: 'Native' } },
-        { name: { fr: 'Anglais', en: 'English' }, level: { fr: 'B2', en: 'B2' } },
-        { name: { fr: 'Allemand', en: 'German' }, level: { fr: 'Scolaire', en: 'Basic' } },
+        { name: { fr: 'Français', en: 'French' }, level: { fr: 'Maternelle', en: 'Native' } },
+        { name: { fr: 'Anglais', en: 'English' }, level: { fr: 'Niveau B2', en: 'B2 Level' } },
+        { name: { fr: 'Allemand', en: 'German' }, level: { fr: 'Scolaire', en: 'School Level' } },
       ],
     },
     {
-      title: { fr: 'Systèmes & Admin', en: 'Systems & Admin' },
+      title: { fr: 'Systèmes & OS', en: 'OS & Systems' },
       type: 'badges',
       items: [
         { name: 'Linux' },
-        { name: 'Debian/APT' },
-        { name: 'SSH' },
+        { name: 'Debian' },
+        { name: 'Bash' },
       ],
     },
     {
@@ -66,12 +59,12 @@ export const resumeConfig: ResumeConfig = {
       type: 'badges',
       items: [
         { name: 'React' },
-        { name: 'TypeScript' },
         { name: 'Node.js' },
+        { name: 'TypeScript' },
       ],
     },
     {
-      title: { fr: 'Cloud & Infrastructure', en: 'Cloud & Infrastructure' },
+      title: { fr: 'Cloud', en: 'Cloud' },
       type: 'badges',
       items: [
         { name: 'AWS' },
@@ -80,21 +73,21 @@ export const resumeConfig: ResumeConfig = {
       ],
     },
     {
-      title: { fr: 'IoT & Domotique', en: 'IoT & Home Automation' },
+      title: { fr: 'IoT & Smart Home', en: 'IoT & Smart Home' },
       type: 'badges',
       items: [
-        { name: 'Home Assistant' },
-        { name: 'Zigbee' },
-        { name: 'Matter' },
+        { name: 'Home Assistant', color: '#41BDF5' },
+        { name: 'Zigbee', color: '#EB0443' },
+        { name: 'Matter', color: '#000000' },
       ],
     },
     {
-      title: { fr: 'Outils IA', en: 'AI Tools' },
+      title: { fr: 'Intelligence Artificielle', en: 'Artificial Intelligence' },
       type: 'badges',
       items: [
-        { name: 'Claude Code' },
         { name: 'GitHub Copilot' },
-        { name: 'LM Studio' },
+        { name: 'Claude', color: '#D97757' },
+        { name: 'LM Studio', color: '#5C4EE5' },
       ],
     },
     {
@@ -103,75 +96,63 @@ export const resumeConfig: ResumeConfig = {
       items: [
         { name: { fr: 'GitHub Foundations', en: 'GitHub Foundations' } },
         { name: { fr: 'Linux Essentials', en: 'Linux Essentials' } },
+        { name: { fr: 'IA générative par Microsoft', en: 'Generative AI by Microsoft' } },
         { name: { fr: 'English for IT 1/2', en: 'English for IT 1/2' } },
-        { name: { fr: 'IA générative (Microsoft)', en: 'Generative AI (Microsoft)' } },
         { name: { fr: 'EF SET English Certificate 69/100', en: 'EF SET English Certificate 69/100' } },
+      ],
+    },
+    {
+      title: { fr: 'Autres compétences', en: 'Other skills' },
+      type: 'text',
+      items: [
+        { name: { fr: 'Permis de conduire', en: 'Driver\'s License' } },
       ],
     },
   ],
 
   experiences: [
     {
-      id: 'lrg-2024',
-      company: { fr: 'LRG Informatique (Laiteries Réunies Genève)', en: 'LRG Informatique' },
+      id: 'lrg-stage',
+      company: { fr: 'Laiteries Réunies Genève (LRG)', en: 'Laiteries Réunies Genève (LRG)' },
       role: { fr: 'Stagiaire Informaticien', en: 'IT Intern' },
       type: { fr: 'Stage', en: 'Internship' },
-      period: { fr: 'Avril 2024 (1 semaine)', en: 'April 2024 (1 week)' },
+      period: { fr: 'Avril 2024', en: 'April 2024' },
       description: {
-        fr: 'Installation et configuration de postes de travail.',
+        fr: 'Installation et configuration de postes informatiques (PC).',
         en: 'Installation and configuration of workstations (PCs).',
       },
       techs: ['Windows', 'Hardware'],
       isHighlighted: true,
-      details: {
-        context: {
-          fr: 'Service informatique interne LRG',
-          en: 'LRG Internal IT Department',
-        },
-        env: {
-          fr: 'Windows / Hardware',
-          en: 'Windows / Hardware',
-        },
-        tasks: {
-          fr: [
-            'Installation de PC',
-            'Configuration système et réseau',
-          ],
-          en: [
-            'PC Installation',
-            'System and network configuration',
-          ],
-        },
-      },
     },
     {
-      id: 'epfl-2024',
-      company: { fr: 'EPFL Informatique', en: 'EPFL IT' },
-      role: { fr: 'Stagiaire découverte', en: 'Discovery Intern' },
+      id: 'epfl-stage',
+      company: { fr: 'EPFL', en: 'EPFL' },
+      role: { fr: 'Stagiaire Informaticien', en: 'IT Intern' },
       type: { fr: 'Stage', en: 'Internship' },
-      period: { fr: 'Février 2024 (3 jours)', en: 'February 2024 (3 days)' },
+      period: { fr: 'Février 2024', en: 'February 2024' },
       description: {
-        fr: 'Découverte de l\'EPFL et des activités IT. Stage d\'observation.',
-        en: 'Discovery of EPFL campus and IT activities. Observation internship.',
+        fr: 'Découverte de l\'EPFL et des activités liées à l\'infrastructure informatique.',
+        en: 'Discovery of EPFL and activities related to IT infrastructure.',
       },
-      techs: ['IT Support', 'Education'],
+      techs: ['Linux', 'Hardware'],
     },
   ],
 
   education: [
     {
       school: { fr: 'Geneva Institute of Technology', en: 'Geneva Institute of Technology' },
-      degree: { fr: 'CFC Informaticien (Exploitation/Infra)', en: 'CFC IT Specialist (Infrastructure)' },
+      degree: { fr: 'CFC Informaticien exploitation et infrastructure', en: 'Federal VET Diploma in IT Operations and Infrastructure' },
       period: '2024 - 2028',
     },
     {
       school: { fr: 'FuturPlus, Lausanne', en: 'FuturPlus, Lausanne' },
-      degree: { fr: 'Préapprentissage', en: 'Pre-apprenticeship' },
+      degree: { fr: 'Année de préapprentissage', en: 'Pre-apprenticeship year' },
+      specialty: { fr: 'Option Architecture et dessins techniques', en: 'Architecture and technical drawing option' },
       period: '2023 - 2024',
     },
     {
-      school: { fr: 'Etablissement Secondaire de Gland', en: 'Secondary School Gland' },
-      degree: { fr: 'Ecole obligatoire (Option Architecture)', en: 'Compulsory School (Architecture Option)' },
+      school: { fr: 'Établissement Secondaire de Gland', en: 'Gland Secondary School' },
+      degree: { fr: 'École obligatoire', en: 'Compulsory Education' },
       period: '2020 - 2023',
     },
   ],
@@ -180,23 +161,26 @@ export const resumeConfig: ResumeConfig = {
     {
       title: { fr: 'Escalade & Ski', en: 'Climbing & Skiing' },
       details: [
-        { fr: 'Pratique toute l\'année (bloc et altitude)', en: 'Year-round practice (bouldering and altitude)' },
+        { fr: 'Pratique suivie toute l\'année, bloc et sorties en altitude', en: 'Year-round practice, bouldering and altitude trips' },
       ],
     },
     {
       title: { fr: 'SimRacing', en: 'SimRacing' },
       details: [
-        { fr: 'Compétition sur simulateur', en: 'Simulator competition' },
-        { fr: 'Optimisation performances', en: 'Performance optimization' },
+        { fr: 'Simulateur régulier, lecture de piste et optimisation', en: 'Regular simulator use, track reading and optimization' },
       ],
     },
     {
       title: { fr: 'VTT', en: 'Mountain Biking' },
       details: [
-        { fr: 'Parcours en sentiers', en: 'Trail riding' },
+        { fr: 'Parcours en sentiers et découverte', en: 'Trail riding and discovery' },
       ],
     },
   ],
+
+  theme: {
+    preset: 'ocean',
+  },
 
   labels: {
     sections: {
@@ -211,7 +195,7 @@ export const resumeConfig: ResumeConfig = {
       mainTasks: { fr: 'Missions principales :', en: 'Main tasks:' },
       moreTasks: { fr: 'autres missions...', en: 'more tasks...' },
       training: { fr: 'Formations :', en: 'Training:' },
-      techEnv: { fr: 'Env. technique :', en: 'Tech stack:' },
+      techEnv: { fr: 'Env. technique :', en: 'Tech environment:' },
       technologies: { fr: 'Technologies', en: 'Technologies' },
     },
     actions: {
